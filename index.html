@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text to Speech</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Text to Voice Converter</h1>
+    <textarea id="text-input" placeholder="Write your text here..."></textarea>
+    <select id="voice-select"></select>
+    <div class="buttons">
+      <button id="listen-btn">
+        <img id="listen-icon" src="img/play.png" alt="Play Icon" />
+        Listen
+      </button>
+      <button id="download-btn">
+        <img src="img/down.png" alt="Download Icon" />
+        <span id="download-text">Download MP3</span>
+        <div id="loading-spinner" class="spinner hidden"></div>
+      </button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
